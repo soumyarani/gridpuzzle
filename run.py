@@ -2,6 +2,8 @@ import os
 import json
 import argparse
 
+import sys
+
 from tot.tasks import get_task
 from tot.methods.bfs import solve, naive_solve
 from tot.models import gpt_usage

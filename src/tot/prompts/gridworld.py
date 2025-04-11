@@ -28,8 +28,116 @@ Fill the following table to show your final answer.
 1996 | correct option from wines | correct option from types
 
 
-Let's solve the puzzle step by step.
+Step-by-step solution:
+ 1. From clue 6, we know that the 1984 bottle is a gewurztraminer.
+    1984 |          | gewurztraminer
+    1988 |          | 
+    1992 |          | 
+    1996 |          | 
+ 2. From clue 3, we know that the 1988 bottle is a pinot noir.
+    1984 |          | gewurztraminer
+    1988 |          | pinot noir
+    1992 |          | 
+    1996 |          | 
+    Remaining options for 1992 and 1996 are merlot or riesling.
+    1984 |          | gewurztraminer
+    1988 |          | pinot noir
+    1992 |          | merlot or riesling
+    1996 |          | merlot or riesling
+ 3. From clue 4, we know that the merlot is either the Annata Branco or the Bianca Flaux.
+    Not clear yet, but lets fill the table with the possible options from vines.
+    1984 | Annata Branco or Bianca Flaux or Ece Suss or Vendemmia  | gewurztraminer
+    1988 | Annata Branco or Bianca Flaux or Ece Suss or Vendemmia  | pinot noir
+    1992 | Annata Branco or Bianca Flaux or Ece Suss or Vendemmia  | merlot or riesling
+    1996 | Annata Branco or Bianca Flaux or Ece Suss or Vendemmia  | merlot or riesling
+
+ 4. From clue 5, we know that the Bianca Flaux was bottled sometime after the Ece Suss.
+    From clue 2, we know that the Bianca Flaux was bottled 4 years before the Vendemmia.
+    Using clues 2,5, the order of the options is  Ece Suss is before Bianca Flaux and Bianca Flaux is before Vendemmia. 
+    So, Bianca FLaux cannot be in 1984 and Vendemmia cannot be in 1984 and 1988. Eliminate the otions from 1984 and 1988.
+
+    1984 | Annata Branco or Ece Suss                   | gewurztraminer
+    1988 | Annata Branco or Ece Suss or Bianca Flaux   | pinot noir
+    1992 | Annata Branco or Bianca Flaux or Vendemmia  | merlot or riesling
+    1996 | Annata Branco or Vendemmia                  | merlot or riesling
+ 5. From clue 1, we know that the Ece Suss was bottled sometime after the Annata Branco.
+    Ece Suss cannot be in 1984 and Annata Branco cannot be in 1988.
+    Bianca Flaux cannot be in 1988 with Ece Suss.
+    1984 | Annata Branco                               | gewurztraminer
+    1988 | Ece Suss                                    | pinot noir
+    1992 | Bianca Flaux               | merlot or riesling
+    1996 | Vendemmia                  | merlot or riesling
  
+6. From clue 4, we know that the merlot is either the Annata Branco or the Bianca Flaux.
+
+    Since the Annata Branco is in 1984, the merlot must be the Bianca Flaux.
+    1984 | Annata Branco                               | gewurztraminer
+    1988 | Ece Suss                                    | pinot noir
+    1992 | Bianca Flaux                               | merlot      
+    1996 | Vendemmia                  | riesling
+ Based on the above clues, we can fill in the table as follows:
+
+ 
+ 1984 | Annata Branco | gewurztraminer
+ 1988 | Ece Suss | pinot noir
+ 1992 | Bianca Flaux | merlot
+ 1996 | Vendemmia | riesling
+ 
+ Final Answer:
+ 1984 | Annata Branco | gewurztraminer
+ 1988 | Ece Suss | pinot noir
+ 1992 | Bianca Flaux | merlot
+ 1996 | Vendemmia | riesling
+
+Input:
+{input}
+
+Output:
+'''
+
+
+
+#cot_prompt
+
+
+propose_prompt = '''Let's play a 5 x 5 mini crossword, where each word should have exactly 5 letters.
+
+{input}
+
+Given the current status, list all possible answers for unfilled or changed words, and your confidence levels (certain/high/medium/low), using the format "h1. apple (medium)". Use "certain" cautiously and only when you are 100% sure this is the correct word. You can list more then one possible answer for each word.
+'''
+
+
+value_prompt = '''Evaluate if the there exists a matching between values using only clues, output(sure/maybe/impossible).
+
+
+
+Clues:
+1. The Ece Suss was bottled sometime after the Annata Branco.
+2. The Bianca Flaux was bottled 4 years before the Vendemmia.
+3. The 1988 bottle is a pinot noir.
+4. The merlot is either the Annata Branco or the Bianca Flaux.
+5. The Bianca Flaux was bottled sometime after the Ece Suss.
+6. The 1984 bottle is a gewurztraminer.
+
+ 
+1984 |          | gewurztraminer
+1988 | Ece Suss | pinot noir
+1992 | Bianca Flaux or  Annata Branco | merlot
+1996 | Vendemmia | riesling
+ 1. From clue 6, we know that the 1984 bottle is a gewurztraminer.
+
+1984 |          | gewurztraminer
+1988 | Ece Suss | pinot noir
+1992 | Bianca Flaux or  Annata Branco | merlot
+1996 | Vendemmia | riesling
+ 2. From clue 4, we know that the merlot is either the Annata Branco or the Bianca Flaux.
+ 3. From clue 5, we know that the Bianca Flaux was bottled sometime after the Ece Suss.
+ 5. From clue 2, we know that the Bianca Flaux was bottled 4 years before the Vendemmia.
+ 3. From clue 1, we know that the Ece Suss was bottled sometime after the Annata Branco.
+
+
+
  Step 1:
  From clue 6, we know that the 1984 bottle is a gewurztraminer. Since there's only one gewurztraminer option (riesling), we can conclude that the 1984 bottle is a riesling.
  
@@ -53,34 +161,14 @@ Let's solve the puzzle step by step.
  
  Step 8:
  From the remaining options, we can conclude that the 1996 bottle is the Branco (since it's not the Annata Branco, Bianca Flaux, Ece Suss, or Vendemmia).
- 
- Final Answer:
- 
- 1984 | Riesling | Gewurztraminer
- 1988 | Pinot Noir | Pinot Noir
- 1992 | Vendemmia | Merlot
- 1996 | Branco | Annata"
-
-Input:
-{input}
-
-Output:
-'''
 
 
 
-#cot_prompt
 
 
-propose_prompt = '''Let's play a 5 x 5 mini crossword, where each word should have exactly 5 letters.
-
-{input}
-
-Given the current status, list all possible answers for unfilled or changed words, and your confidence levels (certain/high/medium/low), using the format "h1. apple (medium)". Use "certain" cautiously and only when you are 100% sure this is the correct word. You can list more then one possible answer for each word.
-'''
 
 
-value_prompt = '''Evaluate if there exists a five letter word of some meaning that fit some letter constraints (sure/maybe/impossible).
+
 
 Incorrect; to injure: w _ o _ g
 The letter constraint is: 5 letters, letter 1 is w, letter 3 is o, letter 5 is g.
