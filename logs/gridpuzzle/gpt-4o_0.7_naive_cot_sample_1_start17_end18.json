@@ -1,0 +1,18 @@
+[
+    {
+        "idx": 17,
+        "ys": [
+            "Step-by-step solution:\n\n1. From clue 1, we know that Henrietta's design went 35 feet.\n   15 feet |          | \n   25 feet |          | \n   35 feet | Henrietta | \n   45 feet |          | \n\n2. From clue 2, we know that Henrietta's design was silver.\n   15 feet |          | \n   25 feet |          | \n   35 feet | Henrietta | silver\n   45 feet |          | \n\n3. From clue 3, we know that Omar's design went somewhat farther than the silver airplane (35 feet). Therefore, Omar's design must have gone 45 feet.\n   15 feet |          | \n   25 feet |          | \n   35 feet | Henrietta | silver\n   45 feet | Omar      | \n\n4. From clues 4 and 5, we know that Ella's design went 10 feet farther than the black plane, and the pink plane went 10 feet farther than the black plane. This implies that Ella's plane and the pink plane must have gone 25 feet and 15 feet, or 15 feet and 25 feet, respectively. Since Omar's plane went 45 feet, and Henrietta's plane went 35 feet, we can deduce that Ella's plane and the pink plane must have gone 25 feet and 15 feet, respectively. This also implies that Ella's plane was blue (since it cannot be black or pink).\n\n   15 feet |          | black\n   25 feet | Ella     | blue\n   35 feet | Henrietta | silver\n   45 feet | Omar      | \n\n5. Since the pink plane went 10 feet farther than the black plane, the black plane must have gone 15 feet, and the pink plane must have gone 25 feet. We can then deduce that Valerie's plane went 15 feet and was black, and Omar's plane was pink.\n\n   15 feet | Valerie  | black\n   25 feet | Ella     | blue\n   35 feet | Henrietta | silver\n   45 feet | Omar      | pink\n\nFinal Answer:\n15 feet | Valerie | black\n25 feet | Ella    | blue\n35 feet | Henrietta | silver\n45 feet | Omar    | pink"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 486,
+            "prompt_tokens": 1525,
+            "cost": 0.016465
+        }
+    }
+]

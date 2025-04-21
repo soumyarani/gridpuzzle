@@ -1,6 +1,6 @@
 import os
 DATA_PATH = os.path.join(os.path.dirname(__file__), '..', 'data')
-
+print(DATA_PATH)
 class Task:
     def __init__(self):
         pass

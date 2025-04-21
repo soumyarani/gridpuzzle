@@ -1,0 +1,98 @@
+[
+    {
+        "idx": 1,
+        "ys": [
+            "Step-by-step solution:\n\n1. From clue 2, we know that Galen scored 62%.\n   ```\n   55% |          | \n   62% | Galen    | \n   69% |          | \n   76% |          | \n   ```\n\n2. From clue 4, we know that Proclus scored 76%.\n   ```\n   55% |          | \n   62% | Galen    | \n   69% |          | \n   76% | Proclus  | \n   ```\n\n3. From clue 3, the A.I. that scored 76% was either Galen or the system from Oxford. Since Galen scored 62%, the system from Oxford cannot be Proclus. Therefore, Proclus is not from Oxford.\n   ```\n   55% |          | \n   62% | Galen    | \n   69% |          | \n   76% | Proclus  | not Oxford\n   ```\n\n4. From clue 1, Zeno finished with a score that was 7% higher than that of the system from UCLA. This means Zeno cannot have scored 55% because there is no score 48% available, and Zeno cannot have scored 62% because there is no score 55% available. Therefore, Zeno must have scored 69%.\n   ```\n   55% |          | \n   62% | Galen    | \n   69% | Zeno     | \n   76% | Proclus  | not Oxford\n   ```\n\n5. From clue 5, the system that scored 55% was either from CIT or Zeno. Since Zeno scored 69%, the system that scored 55% must be from CIT.\n   ```\n   55% |          | CIT\n   62% | Galen    | \n   69% | Zeno     | \n   76% | Proclus  | not Oxford\n   ```\n\n6. From clue 1, Zeno scored 69%, so the system from UCLA scored 62%, which we know is Galen.\n   ```\n   55% |          | CIT\n   62% | Galen    | UCLA\n   69% | Zeno     | \n   76% | Proclus  | not Oxford\n   ```\n\n7. Since Proclus is not from Oxford and the only remaining score without an institution is 76%, Proclus must be the system from Exeter.\n   ```\n   55% |          | CIT\n   62% | Galen    | UCLA\n   69% | Zeno     | \n   76% | Proclus  | Exeter\n   ```\n\n8. The remaining institution not yet assigned is Oxford, which must belong to Zeno since that is the only remaining open slot.\n   ```\n   55% |          | CIT\n   62% | Galen    | UCLA\n   69% | Zeno     | Oxford\n   76% | Proclus  | Exeter\n   ```\n\nFinal Answer:\n\n```\n55% | Archimedes | CIT\n62% | Galen      | UCLA\n69% | Zeno       | Oxford\n76% | Proclus    | Exeter\n```"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 687,
+            "prompt_tokens": 1608,
+            "cost": 0.0177975
+        }
+    },
+    {
+        "idx": 2,
+        "ys": [
+            "Step-by-step solution:\n\n1. From clue 2, we know that Tracy's letter was sent in 1962.\n   - 1962 | Tracy | \n   - 1969 |       | \n   - 1976 |       | \n   - 1983 |       | \n\n2. From clue 4, we know that Sean's missive is either the letter sent in 1983 or the message sent in 1962. Since 1962 is already Tracy's, Sean's letter must be from 1983.\n   - 1962 | Tracy | \n   - 1969 |       | \n   - 1976 |       | \n   - 1983 | Sean  | \n\n3. From clue 5, we know that Sean's bottle was from Le Havre.\n   - 1962 | Tracy | \n   - 1969 |       | \n   - 1976 |       | \n   - 1983 | Sean  | Le Havre\n\n4. From clue 1, the message from Plymouth was sent 14 years after the letter from Cherbourg. Thus, the years must be 1969 (Cherbourg) and 1983 (Plymouth). But since 1983 is already Le Havre, Plymouth must be 1976, and Cherbourg must be 1962.\n   - 1962 | Tracy | Cherbourg\n   - 1969 |       | \n   - 1976 |       | Plymouth\n   - 1983 | Sean  | Le Havre\n\n5. From clue 3, the bottle from Plymouth is either Karla's or Tracy's. Since Tracy is linked to Cherbourg, Plymouth must be Karla's.\n   - 1962 | Tracy | Cherbourg\n   - 1969 |       | \n   - 1976 | Karla | Plymouth\n   - 1983 | Sean  | Le Havre\n\n6. The remaining writer is Felipe, and the remaining origin is Bournemouth. Therefore, Felipe's letter is from Bournemouth and must have been sent in 1969.\n   - 1962 | Tracy  | Cherbourg\n   - 1969 | Felipe | Bournemouth\n   - 1976 | Karla  | Plymouth\n   - 1983 | Sean   | Le Havre\n\nFinal Answer:\n1962 | Tracy  | Cherbourg\n1969 | Felipe | Bournemouth\n1976 | Karla  | Plymouth\n1983 | Sean   | Le Havre"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1207,
+            "prompt_tokens": 3191,
+            "cost": 0.0349275
+        }
+    },
+    {
+        "idx": 3,
+        "ys": [
+            "Step-by-step solution:\n\n1. From clue 2, we know that the April 17 outing was in Gilmore City.\n   Additionally, from clue 3, we know that the outing where they saw 16 shooting stars was in Gilmore City. Therefore, the April 17 outing saw 16 shooting stars.\n   ```\n   16 | April 17 | Gilmore City\n   ```\n\n2. From clue 4, we know that the April 10 outing logged 7 more shooting stars than the April 22 outing. Therefore, the possible pairs are:\n   - (April 10, 9 stars) and (April 22, 2 stars)\n   - (April 10, 16 stars) and (April 22, 9 stars)\n   - (April 10, 23 stars) and (April 22, 16 stars)\n\n   Since the April 17 outing already logged 16 stars, the valid pair is:\n   - (April 10, 9 stars) and (April 22, 2 stars)\n\n3. From clue 1, we know that the outing to Eastbrook logged 7 fewer shooting stars than the trip to Isleton. Therefore, the possible pairs are:\n   - (Eastbrook, 2 stars) and (Isleton, 9 stars)\n   - (Eastbrook, 9 stars) and (Isleton, 16 stars)\n   - (Eastbrook, 16 stars) and (Isleton, 23 stars)\n\n   Since the pair (April 10, 9 stars) and (April 22, 2 stars) doesn't match the 7-star difference required by clue 1, the valid pair is:\n   - (Eastbrook, 16 stars) and (Isleton, 23 stars)\n\n   However, 16 stars are already assigned to Gilmore City, so the valid combination for Eastbrook and Isleton that fits the star count is:\n   - (Eastbrook, 9 stars) and (Isleton, 16 stars)\n\n4. Combining all the information:\n   - April 17 outing: 16 stars, Gilmore City\n   - April 10 outing: 9 stars, Eastbrook\n   - April 22 outing: 2 stars\n   - Isleton must be the location for April 7 outing with 23 stars because it's the only remaining spot for Isleton.\n\n5. Filling in the remaining options:\n\n   - April 7 outing: 23 stars, Isleton\n   - April 22 outing: 2 stars, Manchester (as it's the only location left)\n\nFinal Answer:\n```\n2  | April 22 | Manchester\n9  | April 10 | Eastbrook\n16 | April 17 | Gilmore City\n23 | April 7  | Isleton\n```"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1790,
+            "prompt_tokens": 4724,
+            "cost": 0.051715000000000004
+        }
+    },
+    {
+        "idx": 4,
+        "ys": [
+            "Step-by-step solution:\n\n1. From clue 1, we know that Underwood is in room 114.\n   ```\n   2 |          |          \n   3 |          |          \n   4 |          |          \n   5 | Underwood | room 114\n   ```\n\n2. From clue 2, the guest in room 320 is staying 1 day fewer than Underwood. Since Underwood is staying for 5 days, the guest in room 320 stays for 4 days.\n   ```\n   2 |          |          \n   3 |          |          \n   4 |          | room 320\n   5 | Underwood | room 114\n   ```\n\n3. From clue 3, we know that Owens is staying for 3 days.\n   ```\n   2 |          |          \n   3 | Owens    |          \n   4 |          | room 320\n   5 | Underwood | room 114\n   ```\n\n4. From clue 4, Parker is staying 1 day longer than the guest in room 314. The only possible option is for Parker to stay 4 days, and the guest in room 314 to stay for 3 days. But 3 days is already occupied by Owens, so Parker must stay for 5 days and the guest in room 314 must stay for 4 days. However, room 114 is already occupied by Underwood for 5 days, leading us to conclude that Parker stays for 2 days and the guest in room 314 stays for 1 day longer than that, which is 3 days.\n   ```\n   2 | Parker   |          \n   3 | Owens    | room 314\n   4 |          | room 320\n   5 | Underwood | room 114\n   ```\n\n5. By process of elimination, Zamora must be staying for 4 days.\n   ```\n   2 | Parker   |          \n   3 | Owens    | room 314\n   4 | Zamora   | room 320\n   5 | Underwood | room 114\n   ```\n\n6. At this point, only room 124 is left for Parker.\n   ```\n   2 | Parker   | room 124\n   3 | Owens    | room 314\n   4 | Zamora   | room 320\n   5 | Underwood | room 114\n   ```\n\nFinal Answer:\n```\n2 | Parker    | room 124\n3 | Owens     | room 314\n4 | Zamora    | room 320\n5 | Underwood | room 114\n```"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 2342,
+            "prompt_tokens": 6220,
+            "cost": 0.068055
+        }
+    },
+    {
+        "idx": 5,
+        "ys": [
+            "Step-by-step solution:\n\n1. From clue 3, we know that Stuart lost 7 lbs.\n   3 |          | \n   5 |          | \n   7 | Stuart   | \n   9 |          | \n\n2. From clue 5, we know that Wesley lost 5 lbs.\n   3 |          | \n   5 | Wesley   | \n   7 | Stuart   | \n   9 |          | \n\n3. From clue 4, we know that the person who lost 7 lbs is either the person who used the caveman diet or Raymond. Since Stuart lost 7 lbs, Stuart must have used the caveman diet.\n   3 |          | \n   5 | Wesley   | \n   7 | Stuart   | caveman\n   9 |          | \n\n4. From clue 1, Stuart lost 4 more pounds than the person who used the vegan diet, which means the vegan diet was used by someone who lost 3 lbs.\n   3 |          | vegan\n   5 | Wesley   | \n   7 | Stuart   | caveman\n   9 |          | \n\n5. From clue 2, the dieter who used the gluten-free diet lost 2 more pounds than Raymond. Since we have 3 and 5 lbs already filled, Raymond must have lost 3 lbs. Therefore, the gluten-free diet must be associated with 5 lbs.\n   3 | Raymond  | vegan\n   5 | Wesley   | gluten-free\n   7 | Stuart   | caveman\n   9 |          | \n\n6. The remaining person is Tom, and the remaining diet is dairy-free. Since Tom has not been assigned a weight, he must have lost 9 lbs.\n   3 | Raymond  | vegan\n   5 | Wesley   | gluten-free\n   7 | Stuart   | caveman\n   9 | Tom      | dairy-free\n\nFinal Answer:\n3 | Raymond | vegan\n5 | Wesley  | gluten-free\n7 | Stuart  | caveman\n9 | Tom     | dairy-free"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 2785,
+            "prompt_tokens": 7766,
+            "cost": 0.0846225
+        }
+    },
+    {
+        "idx": 6,
+        "ys": [
+            "Step-by-step solution:\n1. From clue 1, we know that Yvette's purchase was either the insect that sold for $45 or the peacock butterfly.\n   - Possible options for Yvette: $45 or peacock butterfly.\n   \n2. From clue 3, the atlas butterfly costs more than the peacock butterfly. This means the peacock butterfly cannot be the one that sold for $90 (since $90 is the highest price).\n   - Possible prices for peacock: $45, $60, or $75.\n   - Possible prices for atlas: $60, $75, or $90.\n\n3. From clue 4, the four butterflies are the one that sold for $90, the grayling butterfly, Yvette's purchase, and Walter's purchase. This means Yvette's purchase is not the one that sold for $90 unless she bought it.\n\n4. From clue 2, the swallowtail butterfly costs $15 more than Phillip's purchase.\n   - Possible combinations for Phillip and the swallowtail:\n     - Phillip: $45, Swallowtail: $60\n     - Phillip: $60, Swallowtail: $75\n     - Phillip: $75, Swallowtail: $90\n\n5. Based on the above clues, we deduce the following:\n   - If Yvette purchased the peacock butterfly, the peacock could be $45, $60, or $75.\n   - If Yvette's purchase is $45, then Yvette did not purchase the peacock butterfly and the peacock could be $60 or $75.\n\n6. Let's test the possibilities:\n   - If Yvette's purchase is $45, then the peacock is not $45, and it must be $60 or $75. \n   - If Phillip's purchase is $45, then the swallowtail is $60.\n\n7. Testing the possibilities:\n   - Assume Yvette purchased the peacock:\n     - If peacock is $45, Yvette = $45, Phillip cannot be $45.\n     - If peacock is $60, then atlas must be $75 or $90, Phillip cannot be $60.\n     - If peacock is $75, then atlas must be $90, Phillip cannot be $75.\n\n   - Assume Yvette purchased $45:\n     - The peacock could be $60 or $75, and it could be Phillip's or Walter's.\n     - The grayling and Walter's purchases remain uncertain.\n\n8. Logical deduction:\n   - If Yvette = $45, the peacock is not $45.\n   - If Phillip = $60, Swallowtail = $75, Atlas = $90.\n\n9. Final assignment:\n   - $45: Yvette (since this aligns with all clues).\n   - $60: Phillip (since the swallowtail costs $15 more).\n   - $75: Walter (since the swallowtail is $75).\n   - $90: Otis (since the atlas is more expensive than the peacock and is $90).\n\nFinal Answer:\n$45 | Yvette | Peacock\n$60 | Phillip | Swallowtail\n$75 | Walter | Grayling\n$90 | Otis | Atlas"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 3448,
+            "prompt_tokens": 9291,
+            "cost": 0.10153000000000001
+        }
+    }
+]
